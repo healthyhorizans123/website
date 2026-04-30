@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply – Hot Beans Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="social-icons">
+        <a href="https://www.tiktok.com" target="_blank"><img src="tiktok.png" alt="TikTok"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="insta.jpg" alt="Instagram"></a>
+        <a href="https://twitter.com" target="_blank"><img src="download.png" alt="Twitter"></a>
+    </div>
+    <img src="hot beans logo.png" class="logo" alt="Hot Beans Web" onclick="location.href='index.html'">
+    <div class="hamburger" onclick="openMenu()">☰</div>
+</header>
+
+<nav id="sideMenu">
+    <a href="javascript:void(0)" onclick="closeMenu()">Close ✖</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="team.html">Meet the Team</a>
+    <a href="careers.html">Careers</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="apply.html">Apply</a>
+    <a href="training.html">Training</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h1>Apply for a Role</h1>
+    <p>
+        Use the form below to submit your application to Hot Beans Web. This is a simple form for
+        demonstration and coursework purposes, so it does not actually send data to a server, but it
+        shows the type of information we would normally collect from applicants.
+    </p>
+
+    <form>
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label for="role">Role You Are Applying For</label>
+            <select id="role">
+                <option>Junior Front‑End Developer</option>
+                <option>Junior Back‑End Developer</option>
+                <option>Trainee Web Developer</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="experience">Experience / Qualifications</label>
+            <textarea id="experience" rows="4" placeholder="Describe your experience, courses or qualifications"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Why do you want to join Hot Beans Web?</label>
+            <textarea id="message" rows="4" placeholder="Explain your motivation and goals"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="cv">Link to your CV or portfolio (optional)</label>
+            <input id="cv" type="text" placeholder="Paste a link to your CV or portfolio">
+        </div>
+
+        <button type="button">Submit (Demo Only)</button>
+    </form>
+</div>
+
+</body>
+</html>
